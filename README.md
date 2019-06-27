@@ -20,6 +20,10 @@ DataSet Used: https://grouplens.org/datasets/movielens/100k/
   
 
 
+# Finding a way to predict all the movie missing ratings. For that, we have to find a set of features which can define how a user rates the movies. These are called latent features. We need to find a way to extract the most important latent features from the the existing features. Matrix factorization, is one such technique which uses the lower dimension dense matrix and helps in extracting the important latent features.
+
+	• Let’s understand matrix factorization with an example. Consider a user-movie ratings matrix (1-5) given by different users to different movies.
+	• Here user_id is the unique ID of different users and each movie is also assigned a unique ID. A rating of 0.0 represents that the user has not rated that particular movie (1 is the lowest rating a user can give). We want to predict these missing ratings. Using matrix factorization, we can find some latent features that can determine how a user rates a movie. We decompose the matrix into constituent parts in such a way that the product of these parts generates the original matrix.
 
 
 
